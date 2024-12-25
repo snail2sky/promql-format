@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromQL 格式化工具</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/github.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+</head>
+<body>
+    <h2>PromQL 格式化工具</h2>
+    <div class="main-container">
+        <div class="editor-container">
+            <div class="container">
+                <div class="editor">
+                    <h3>输入 PromQL:</h3>
+                    <textarea id="input" placeholder="请输入需要格式化的 PromQL"></textarea>
+                </div>
+                <div class="editor">
+                    <h3>格式化结果:</h3>
+                    <textarea id="output" readonly></textarea>
+                </div>
+            </div>
+            <div class="button-group">
+                <button onclick="formatPromQL()">格式化</button>
+                <button onclick="copyToClipboard()">复制结果</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/promql-mode.js"></script>
+    <script src="./js/promql-formatter.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
