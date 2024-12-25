@@ -44,6 +44,7 @@ function initEditors() {
 // 自动格式化函数
 function autoFormat() {
     const query = inputEditor.getValue().trim();
+    console.log(query);
     if (query) {
         try {
             const formatted = formatter.format(query);
