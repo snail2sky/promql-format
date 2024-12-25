@@ -1,0 +1,2 @@
+# promql-format
+Format promql
